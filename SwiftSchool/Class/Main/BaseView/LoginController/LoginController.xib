@@ -1,20 +1,64 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModule="SwiftSchool" customModuleProvider="target">
             <connections>
+                <outlet property="enterButton" destination="Lxu-dd-hrR" id="Z2e-cf-QIR"/>
+                <outlet property="nameTextField" destination="5Z2-TN-h3q" id="TCm-g9-w3a"/>
+                <outlet property="passwordTextField" destination="GE5-sX-ZWN" id="MpW-UU-7Ag"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Z2-TN-h3q">
+                    <rect key="frame" x="16" y="150" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GE5-sX-ZWN">
+                    <rect key="frame" x="16" y="230" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxu-dd-hrR">
+                    <rect key="frame" x="147.5" y="325" width="80" height="30"/>
+                    <color key="backgroundColor" red="0.10821054875445058" green="0.50448598445852966" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="N3s-24-EvN"/>
+                    </constraints>
+                    <state key="normal" title="登陆">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GE5-sX-ZWN" firstAttribute="top" secondItem="5Z2-TN-h3q" secondAttribute="bottom" constant="50" id="5Xg-rk-f4y"/>
+                <constraint firstAttribute="trailing" secondItem="5Z2-TN-h3q" secondAttribute="trailing" constant="16" id="Wx7-y1-dOG"/>
+                <constraint firstItem="Lxu-dd-hrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZhW-No-fpz"/>
+                <constraint firstItem="5Z2-TN-h3q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gCV-rg-sEj"/>
+                <constraint firstItem="5Z2-TN-h3q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="rlf-Mu-56S"/>
+                <constraint firstItem="Lxu-dd-hrR" firstAttribute="top" secondItem="GE5-sX-ZWN" secondAttribute="bottom" constant="65" id="scO-Aa-iSD"/>
+                <constraint firstItem="5Z2-TN-h3q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="ts8-Ts-vwi"/>
+                <constraint firstItem="GE5-sX-ZWN" firstAttribute="trailing" secondItem="5Z2-TN-h3q" secondAttribute="trailing" id="v9A-ui-sFf"/>
+                <constraint firstItem="GE5-sX-ZWN" firstAttribute="leading" secondItem="5Z2-TN-h3q" secondAttribute="leading" id="wkW-wP-hs8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
 </document>

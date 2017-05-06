@@ -9,11 +9,12 @@
 import UIKit
 
 class LoginController: BaseViewController {
-
+    @IBOutlet weak var enterButton: UIButton!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
