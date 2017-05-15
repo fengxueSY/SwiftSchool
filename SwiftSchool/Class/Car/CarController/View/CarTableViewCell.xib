@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -28,13 +28,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Aoo-UI-byH">
-                        <rect key="frame" x="8" y="17.5" width="20" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="20" id="IM6-My-xyD"/>
-                            <constraint firstAttribute="height" constant="20" id="Pnu-ZU-hKd"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教练:暂无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az0-sL-PYr">
                         <rect key="frame" x="113" y="8" width="57" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -72,7 +65,7 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Jn-Ra-ymI">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_C2" translatesAutoresizingMaskIntoConstraints="NO" id="4Jn-Ra-ymI">
                         <rect key="frame" x="78" y="32" width="18" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="18" id="C0k-Cv-w67"/>
@@ -85,25 +78,32 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BXS-oS-y2U">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="005" translatesAutoresizingMaskIntoConstraints="NO" id="BXS-oS-y2U">
                         <rect key="frame" x="8" y="17.5" width="65" height="65"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="65" id="BNM-GK-Lpx"/>
                             <constraint firstAttribute="width" constant="65" id="nwR-XJ-Vgc"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ux-9mN">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_kongxian" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ux-9mN">
                         <rect key="frame" x="136" y="32" width="30" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="IV2-co-hzM"/>
                             <constraint firstAttribute="width" constant="30" id="IwR-je-a35"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Jh-BF-9yq">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_lixian" translatesAutoresizingMaskIntoConstraints="NO" id="2Jh-BF-9yq">
                         <rect key="frame" x="101" y="32" width="30" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="3od-Tj-im5"/>
                             <constraint firstAttribute="width" constant="30" id="HfS-4V-0KS"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carlist_banding" translatesAutoresizingMaskIntoConstraints="NO" id="Aoo-UI-byH">
+                        <rect key="frame" x="8" y="17" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="IM6-My-xyD"/>
+                            <constraint firstAttribute="height" constant="20" id="Pnu-ZU-hKd"/>
                         </constraints>
                     </imageView>
                 </subviews>
@@ -153,6 +153,11 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="005" width="80" height="80"/>
+        <image name="car_status_C2" width="18" height="15"/>
+        <image name="car_status_kongxian" width="30" height="15"/>
+        <image name="car_status_lixian" width="30" height="15"/>
+        <image name="carlist_banding" width="20" height="20"/>
         <image name="common_place" width="10" height="14"/>
     </resources>
 </document>

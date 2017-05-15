@@ -21,7 +21,7 @@ class BaseViewController: UIViewController {
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     public func returnStr() -> String {
         return "这里是传之久远"

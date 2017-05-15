@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF5186F68F498ED65D394C1 /* Pods_SwiftSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */; };
 		2F025EE71E9CBA9800525EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EE51E9CBA9800525EFE /* Main.storyboard */; };
 		2F025EE91E9CBA9800525EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EE81E9CBA9800525EFE /* Assets.xcassets */; };
 		2F025EEC1E9CBA9800525EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EEA1E9CBA9800525EFE /* LaunchScreen.storyboard */; };
@@ -15,14 +16,23 @@
 		2F0263AB1E9CBDF700525EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263AA1E9CBDF700525EFE /* AppDelegate.swift */; };
 		2F0263AD1E9CBE4700525EFE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263AC1E9CBE4700525EFE /* TabBarController.swift */; };
 		2F0263AF1E9CC1C700525EFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263AE1E9CC1C700525EFE /* BaseViewController.swift */; };
-		2F0263B11E9CC20000525EFE /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263B01E9CC20000525EFE /* CarViewController.swift */; };
 		2F0263B31E9CC3A300525EFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263B21E9CC3A300525EFE /* HomeViewController.swift */; };
 		2F0263B51E9CC3B600525EFE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263B41E9CC3B600525EFE /* ListViewController.swift */; };
 		2F0263B71E9CC3C500525EFE /* MySelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0263B61E9CC3C500525EFE /* MySelfViewController.swift */; };
 		2F0545C21E9DB4BA00872C86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0545C01E9DB4BA00872C86 /* LoginController.swift */; };
 		2F0545C31E9DB4BA00872C86 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0545C11E9DB4BA00872C86 /* LoginController.xib */; };
-		2F61A4961E9CCE4400983245 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F61A4941E9CCE4400983245 /* CarTableViewCell.swift */; };
-		2F61A4971E9CCE4400983245 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F61A4951E9CCE4400983245 /* CarTableViewCell.xib */; };
+		2F2109F91EC5BA95003AB6C6 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2109CA1EC5BA95003AB6C6 /* CarViewController.swift */; };
+		2F2109FA1EC5BA95003AB6C6 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2109CD1EC5BA95003AB6C6 /* CarTableViewCell.swift */; };
+		2F2109FB1EC5BA95003AB6C6 /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F2109CE1EC5BA95003AB6C6 /* CarTableViewCell.xib */; };
+		2F2109FC1EC5BA95003AB6C6 /* TopSiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2109CF1EC5BA95003AB6C6 /* TopSiftView.swift */; };
+		2F210A021EC5BDF6003AB6C6 /* CarDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F210A011EC5BDF6003AB6C6 /* CarDetailsController.swift */; };
+		2F23A8141EC93B9600C47621 /* CarDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A8121EC93B9600C47621 /* CarDetailsCell.swift */; };
+		2F23A8171EC94D0800C47621 /* CarDetailsRow_0_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A8161EC94D0800C47621 /* CarDetailsRow_0_View.swift */; };
+		2F23A8191EC9793E00C47621 /* CarDetailsRow_1_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A8181EC9793E00C47621 /* CarDetailsRow_1_View.swift */; };
+		2F23A81B1EC97FA600C47621 /* CarDetailsRow_4_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A81A1EC97FA600C47621 /* CarDetailsRow_4_View.swift */; };
+		2F23A81D1EC9859800C47621 /* CarDetailsRow_5_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A81C1EC9859800C47621 /* CarDetailsRow_5_View.swift */; };
+		2F23A8201EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A81E1EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift */; };
+		2F23A8211EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +67,26 @@
 		2F0263AA1E9CBDF700525EFE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F0263AC1E9CBE4700525EFE /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2F0263AE1E9CC1C700525EFE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2F0263B01E9CC20000525EFE /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		2F0263B21E9CC3A300525EFE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2F0263B41E9CC3B600525EFE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		2F0263B61E9CC3C500525EFE /* MySelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySelfViewController.swift; sourceTree = "<group>"; };
 		2F0545C01E9DB4BA00872C86 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2F0545C11E9DB4BA00872C86 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
-		2F61A4941E9CCE4400983245 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
-		2F61A4951E9CCE4400983245 /* CarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		2F2109CA1EC5BA95003AB6C6 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		2F2109CD1EC5BA95003AB6C6 /* CarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		2F2109CE1EC5BA95003AB6C6 /* CarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		2F2109CF1EC5BA95003AB6C6 /* TopSiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopSiftView.swift; sourceTree = "<group>"; };
+		2F210A011EC5BDF6003AB6C6 /* CarDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsController.swift; sourceTree = "<group>"; };
+		2F23A8121EC93B9600C47621 /* CarDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsCell.swift; sourceTree = "<group>"; };
+		2F23A8161EC94D0800C47621 /* CarDetailsRow_0_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsRow_0_View.swift; sourceTree = "<group>"; };
+		2F23A8181EC9793E00C47621 /* CarDetailsRow_1_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsRow_1_View.swift; sourceTree = "<group>"; };
+		2F23A81A1EC97FA600C47621 /* CarDetailsRow_4_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsRow_4_View.swift; sourceTree = "<group>"; };
+		2F23A81C1EC9859800C47621 /* CarDetailsRow_5_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsRow_5_View.swift; sourceTree = "<group>"; };
+		2F23A81E1EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsCarFunctionCell.swift; sourceTree = "<group>"; };
+		2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailsCarFunctionCell.xib; sourceTree = "<group>"; };
+		2F47D3922F30DD586835DE5B /* Pods-SwiftSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSchool/Pods-SwiftSchool.release.xcconfig"; sourceTree = "<group>"; };
+		6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSchool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1630A3084B90AE57DDD2086 /* Pods-SwiftSchool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSchool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSchool/Pods-SwiftSchool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF5186F68F498ED65D394C1 /* Pods_SwiftSchool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +122,8 @@
 				2F025EF51E9CBA9800525EFE /* SwiftSchoolTests */,
 				2F025F001E9CBA9800525EFE /* SwiftSchoolUITests */,
 				2F025EDF1E9CBA9800525EFE /* Products */,
+				DB7ADACFF5A9B21FB0E244C7 /* Pods */,
+				4540E960D94CC3DCB2A48804 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,219 +182,19 @@
 		2F025F101E9CBD7F00525EFE /* Car */ = {
 			isa = PBXGroup;
 			children = (
-				2F025F111E9CBD7F00525EFE /* Controller */,
-				2F025F521E9CBD7F00525EFE /* Model */,
-				2F025F671E9CBD7F00525EFE /* View */,
+				2F2109FD1EC5BDCF003AB6C6 /* CarDetails */,
+				2F2109C41EC5BA94003AB6C6 /* AlarmInfo */,
+				2F2109C81EC5BA95003AB6C6 /* CarController */,
+				2F2109D01EC5BA95003AB6C6 /* DriverAnalyse */,
+				2F2109D41EC5BA95003AB6C6 /* DriverPortroit */,
+				2F2109D81EC5BA95003AB6C6 /* RealTimeLocationController */,
+				2F2109DC1EC5BA95003AB6C6 /* RealTimeVideo */,
+				2F2109E01EC5BA95003AB6C6 /* ReplayTheater */,
+				2F2109E41EC5BA95003AB6C6 /* SearchController */,
+				2F2109E81EC5BA95003AB6C6 /* TeacherAnalyse */,
+				2F2109EC1EC5BA95003AB6C6 /* TeachingTrack */,
 			);
 			path = Car;
-			sourceTree = "<group>";
-		};
-		2F025F111E9CBD7F00525EFE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				2F025F121E9CBD7F00525EFE /* AlarmInfo */,
-				2F025F161E9CBD7F00525EFE /* DriverAnalyse */,
-				2F025F191E9CBD7F00525EFE /* DriverPortroit */,
-				2F025F321E9CBD7F00525EFE /* RealTimeLocationController */,
-				2F025F391E9CBD7F00525EFE /* RealTimeVideo */,
-				2F025F3D1E9CBD7F00525EFE /* ReplayTheater */,
-				2F025F411E9CBD7F00525EFE /* SearchController */,
-				2F025F451E9CBD7F00525EFE /* TeacherAnalyse */,
-				2F025F481E9CBD7F00525EFE /* TeachingTrack */,
-				2F0263B01E9CC20000525EFE /* CarViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		2F025F121E9CBD7F00525EFE /* AlarmInfo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlarmInfo;
-			sourceTree = "<group>";
-		};
-		2F025F161E9CBD7F00525EFE /* DriverAnalyse */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DriverAnalyse;
-			sourceTree = "<group>";
-		};
-		2F025F191E9CBD7F00525EFE /* DriverPortroit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DriverPortroit;
-			sourceTree = "<group>";
-		};
-		2F025F321E9CBD7F00525EFE /* RealTimeLocationController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RealTimeLocationController;
-			sourceTree = "<group>";
-		};
-		2F025F391E9CBD7F00525EFE /* RealTimeVideo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RealTimeVideo;
-			sourceTree = "<group>";
-		};
-		2F025F3D1E9CBD7F00525EFE /* ReplayTheater */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReplayTheater;
-			sourceTree = "<group>";
-		};
-		2F025F411E9CBD7F00525EFE /* SearchController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SearchController;
-			sourceTree = "<group>";
-		};
-		2F025F451E9CBD7F00525EFE /* TeacherAnalyse */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TeacherAnalyse;
-			sourceTree = "<group>";
-		};
-		2F025F481E9CBD7F00525EFE /* TeachingTrack */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TeachingTrack;
-			sourceTree = "<group>";
-		};
-		2F025F521E9CBD7F00525EFE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2F025F531E9CBD7F00525EFE /* AlarmInfoModel */,
-				2F025F561E9CBD7F00525EFE /* DriverAnalyseModel */,
-				2F025F5B1E9CBD7F00525EFE /* RealTimeLocationModel */,
-				2F025F601E9CBD7F00525EFE /* SearchModel */,
-				2F025F611E9CBD7F00525EFE /* TeacherAnalyseModel */,
-				2F025F641E9CBD7F00525EFE /* TeachingTrack(教学轨迹) */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2F025F531E9CBD7F00525EFE /* AlarmInfoModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlarmInfoModel;
-			sourceTree = "<group>";
-		};
-		2F025F561E9CBD7F00525EFE /* DriverAnalyseModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DriverAnalyseModel;
-			sourceTree = "<group>";
-		};
-		2F025F5B1E9CBD7F00525EFE /* RealTimeLocationModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RealTimeLocationModel;
-			sourceTree = "<group>";
-		};
-		2F025F601E9CBD7F00525EFE /* SearchModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SearchModel;
-			sourceTree = "<group>";
-		};
-		2F025F611E9CBD7F00525EFE /* TeacherAnalyseModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TeacherAnalyseModel;
-			sourceTree = "<group>";
-		};
-		2F025F641E9CBD7F00525EFE /* TeachingTrack(教学轨迹) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "TeachingTrack(教学轨迹)";
-			sourceTree = "<group>";
-		};
-		2F025F671E9CBD7F00525EFE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2F025F681E9CBD7F00525EFE /* AlarmInfoView */,
-				2F025F781E9CBD7F00525EFE /* ConditionView */,
-				2F025F881E9CBD7F00525EFE /* DriverAnlyseView */,
-				2F025F8C1E9CBD7F00525EFE /* DriverPortroitView */,
-				2F025F951E9CBD7F00525EFE /* RealTimeLocationView */,
-				2F025FA11E9CBD7F00525EFE /* SearchView */,
-				2F025FA21E9CBD7F00525EFE /* TeacherAnalyseView */,
-				2F025FA61E9CBD7F00525EFE /* TeachingTrack(教学轨迹) */,
-				2F61A4941E9CCE4400983245 /* CarTableViewCell.swift */,
-				2F61A4951E9CCE4400983245 /* CarTableViewCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		2F025F681E9CBD7F00525EFE /* AlarmInfoView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AlarmInfoView;
-			sourceTree = "<group>";
-		};
-		2F025F781E9CBD7F00525EFE /* ConditionView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ConditionView;
-			sourceTree = "<group>";
-		};
-		2F025F881E9CBD7F00525EFE /* DriverAnlyseView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DriverAnlyseView;
-			sourceTree = "<group>";
-		};
-		2F025F8C1E9CBD7F00525EFE /* DriverPortroitView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DriverPortroitView;
-			sourceTree = "<group>";
-		};
-		2F025F951E9CBD7F00525EFE /* RealTimeLocationView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RealTimeLocationView;
-			sourceTree = "<group>";
-		};
-		2F025FA11E9CBD7F00525EFE /* SearchView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SearchView;
-			sourceTree = "<group>";
-		};
-		2F025FA21E9CBD7F00525EFE /* TeacherAnalyseView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TeacherAnalyseView;
-			sourceTree = "<group>";
-		};
-		2F025FA61E9CBD7F00525EFE /* TeachingTrack(教学轨迹) */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "TeachingTrack(教学轨迹)";
 			sourceTree = "<group>";
 		};
 		2F0260A61E9CBD7F00525EFE /* HomePage */ = {
@@ -704,6 +529,376 @@
 			path = MyTeachersView;
 			sourceTree = "<group>";
 		};
+		2F2109C41EC5BA94003AB6C6 /* AlarmInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109C51EC5BA94003AB6C6 /* Controller */,
+				2F2109C61EC5BA94003AB6C6 /* Model */,
+				2F2109C71EC5BA94003AB6C6 /* View */,
+			);
+			path = AlarmInfo;
+			sourceTree = "<group>";
+		};
+		2F2109C51EC5BA94003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109C61EC5BA94003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109C71EC5BA94003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109C81EC5BA95003AB6C6 /* CarController */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109C91EC5BA95003AB6C6 /* Controller */,
+				2F2109CB1EC5BA95003AB6C6 /* Model */,
+				2F2109CC1EC5BA95003AB6C6 /* View */,
+			);
+			path = CarController;
+			sourceTree = "<group>";
+		};
+		2F2109C91EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109CA1EC5BA95003AB6C6 /* CarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109CB1EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109CC1EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109CD1EC5BA95003AB6C6 /* CarTableViewCell.swift */,
+				2F2109CE1EC5BA95003AB6C6 /* CarTableViewCell.xib */,
+				2F2109CF1EC5BA95003AB6C6 /* TopSiftView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109D01EC5BA95003AB6C6 /* DriverAnalyse */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109D11EC5BA95003AB6C6 /* Controller */,
+				2F2109D21EC5BA95003AB6C6 /* Model */,
+				2F2109D31EC5BA95003AB6C6 /* View */,
+			);
+			path = DriverAnalyse;
+			sourceTree = "<group>";
+		};
+		2F2109D11EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109D21EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109D31EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109D41EC5BA95003AB6C6 /* DriverPortroit */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109D51EC5BA95003AB6C6 /* Controller */,
+				2F2109D61EC5BA95003AB6C6 /* Model */,
+				2F2109D71EC5BA95003AB6C6 /* View */,
+			);
+			path = DriverPortroit;
+			sourceTree = "<group>";
+		};
+		2F2109D51EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109D61EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109D71EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109D81EC5BA95003AB6C6 /* RealTimeLocationController */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109D91EC5BA95003AB6C6 /* Controller */,
+				2F2109DA1EC5BA95003AB6C6 /* Model */,
+				2F2109DB1EC5BA95003AB6C6 /* View */,
+			);
+			path = RealTimeLocationController;
+			sourceTree = "<group>";
+		};
+		2F2109D91EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109DA1EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109DB1EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109DC1EC5BA95003AB6C6 /* RealTimeVideo */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109DD1EC5BA95003AB6C6 /* Controller */,
+				2F2109DE1EC5BA95003AB6C6 /* Model */,
+				2F2109DF1EC5BA95003AB6C6 /* View */,
+			);
+			path = RealTimeVideo;
+			sourceTree = "<group>";
+		};
+		2F2109DD1EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109DE1EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109DF1EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109E01EC5BA95003AB6C6 /* ReplayTheater */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109E11EC5BA95003AB6C6 /* Controller */,
+				2F2109E21EC5BA95003AB6C6 /* Model */,
+				2F2109E31EC5BA95003AB6C6 /* View */,
+			);
+			path = ReplayTheater;
+			sourceTree = "<group>";
+		};
+		2F2109E11EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109E21EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109E31EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109E41EC5BA95003AB6C6 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109E51EC5BA95003AB6C6 /* Controller */,
+				2F2109E61EC5BA95003AB6C6 /* Model */,
+				2F2109E71EC5BA95003AB6C6 /* View */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
+		2F2109E51EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109E61EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109E71EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109E81EC5BA95003AB6C6 /* TeacherAnalyse */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109E91EC5BA95003AB6C6 /* Controller */,
+				2F2109EA1EC5BA95003AB6C6 /* Model */,
+				2F2109EB1EC5BA95003AB6C6 /* View */,
+			);
+			path = TeacherAnalyse;
+			sourceTree = "<group>";
+		};
+		2F2109E91EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109EA1EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109EB1EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109EC1EC5BA95003AB6C6 /* TeachingTrack */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109ED1EC5BA95003AB6C6 /* Controller */,
+				2F2109EE1EC5BA95003AB6C6 /* Model */,
+				2F2109EF1EC5BA95003AB6C6 /* View */,
+			);
+			path = TeachingTrack;
+			sourceTree = "<group>";
+		};
+		2F2109ED1EC5BA95003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109EE1EC5BA95003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F2109EF1EC5BA95003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F2109FD1EC5BDCF003AB6C6 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2F2109FE1EC5BDCF003AB6C6 /* Controller */,
+				2F2109FF1EC5BDCF003AB6C6 /* Model */,
+				2F210A001EC5BDCF003AB6C6 /* View */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		2F2109FE1EC5BDCF003AB6C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F210A011EC5BDF6003AB6C6 /* CarDetailsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F2109FF1EC5BDCF003AB6C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F210A001EC5BDCF003AB6C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F23A8121EC93B9600C47621 /* CarDetailsCell.swift */,
+				2F23A8161EC94D0800C47621 /* CarDetailsRow_0_View.swift */,
+				2F23A8181EC9793E00C47621 /* CarDetailsRow_1_View.swift */,
+				2F23A81A1EC97FA600C47621 /* CarDetailsRow_4_View.swift */,
+				2F23A81C1EC9859800C47621 /* CarDetailsRow_5_View.swift */,
+				2F23A81E1EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift */,
+				2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4540E960D94CC3DCB2A48804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB7ADACFF5A9B21FB0E244C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1630A3084B90AE57DDD2086 /* Pods-SwiftSchool.debug.xcconfig */,
+				2F47D3922F30DD586835DE5B /* Pods-SwiftSchool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -711,9 +906,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F025F061E9CBA9800525EFE /* Build configuration list for PBXNativeTarget "SwiftSchool" */;
 			buildPhases = (
+				0F9EB8B6B1D40497D1D5C39D /* [CP] Check Pods Manifest.lock */,
 				2F025EDA1E9CBA9800525EFE /* Sources */,
 				2F025EDB1E9CBA9800525EFE /* Frameworks */,
 				2F025EDC1E9CBA9800525EFE /* Resources */,
+				4682B5214DCAB5F4654D8FC9 /* [CP] Embed Pods Frameworks */,
+				F80F037376BACA4DC23BB7C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -817,8 +1015,9 @@
 			files = (
 				2F025EEC1E9CBA9800525EFE /* LaunchScreen.storyboard in Resources */,
 				2F025EE91E9CBA9800525EFE /* Assets.xcassets in Resources */,
-				2F61A4971E9CCE4400983245 /* CarTableViewCell.xib in Resources */,
+				2F2109FB1EC5BA95003AB6C6 /* CarTableViewCell.xib in Resources */,
 				2F0545C31E9DB4BA00872C86 /* LoginController.xib in Resources */,
+				2F23A8211EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib in Resources */,
 				2F025EE71E9CBA9800525EFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,20 +1038,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F9EB8B6B1D40497D1D5C39D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4682B5214DCAB5F4654D8FC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSchool/Pods-SwiftSchool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80F037376BACA4DC23BB7C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSchool/Pods-SwiftSchool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F025EDA1E9CBA9800525EFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F23A8201EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift in Sources */,
 				2F0263B31E9CC3A300525EFE /* HomeViewController.swift in Sources */,
-				2F0263B11E9CC20000525EFE /* CarViewController.swift in Sources */,
-				2F61A4961E9CCE4400983245 /* CarTableViewCell.swift in Sources */,
+				2F23A8171EC94D0800C47621 /* CarDetailsRow_0_View.swift in Sources */,
+				2F23A81B1EC97FA600C47621 /* CarDetailsRow_4_View.swift in Sources */,
 				2F0263B51E9CC3B600525EFE /* ListViewController.swift in Sources */,
+				2F23A8191EC9793E00C47621 /* CarDetailsRow_1_View.swift in Sources */,
 				2F0545C21E9DB4BA00872C86 /* LoginController.swift in Sources */,
+				2F23A8141EC93B9600C47621 /* CarDetailsCell.swift in Sources */,
+				2F23A81D1EC9859800C47621 /* CarDetailsRow_5_View.swift in Sources */,
 				2F0263AB1E9CBDF700525EFE /* AppDelegate.swift in Sources */,
+				2F2109FC1EC5BA95003AB6C6 /* TopSiftView.swift in Sources */,
 				2F0263AD1E9CBE4700525EFE /* TabBarController.swift in Sources */,
+				2F2109FA1EC5BA95003AB6C6 /* CarTableViewCell.swift in Sources */,
+				2F210A021EC5BDF6003AB6C6 /* CarDetailsController.swift in Sources */,
 				2F0263AF1E9CC1C700525EFE /* BaseViewController.swift in Sources */,
 				2F0263B71E9CC3C500525EFE /* MySelfViewController.swift in Sources */,
+				2F2109F91EC5BA95003AB6C6 /* CarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1259,7 @@
 		};
 		2F025F071E9CBA9800525EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1630A3084B90AE57DDD2086 /* Pods-SwiftSchool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1025,6 +1281,7 @@
 		};
 		2F025F081E9CBA9800525EFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F47D3922F30DD586835DE5B /* Pods-SwiftSchool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
