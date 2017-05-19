@@ -9,7 +9,13 @@
 import UIKit
 let CarDetailsCarFunctionCellID = "CarDetailsCarFunctionCellID"
 
+protocol CarDetailsRow_5_ViewDelegate {
+    func carActionChoose(number:NSInteger)
+}
+
 class CarDetailsRow_5_View: UIView,UICollectionViewDelegate,UICollectionViewDataSource {
+    var delegate:CarDetailsRow_5_ViewDelegate?
+    
     var nameLabel = UILabel()
     var backView = UIView()
     var collectionView : UICollectionView?
@@ -54,6 +60,12 @@ class CarDetailsRow_5_View: UIView,UICollectionViewDelegate,UICollectionViewData
         cell.headImageView.image = UIImage.init(named: titleImage[indexPath.row])
         cell.nameLabel.text = titleArray[indexPath.row]
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if delegate != nil {
+            delegate?.carActionChoose(number: indexPath.row)
+        }
+        
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

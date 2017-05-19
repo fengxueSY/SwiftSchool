@@ -16,8 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let login = LoginController()
+        
+        
         let tab = TabBarController()
-        self.window?.rootViewController = tab
+        self.window?.rootViewController = login
         return true
     }
 

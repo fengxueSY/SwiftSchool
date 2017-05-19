@@ -16,28 +16,28 @@ class TabBarController: UITabBarController {
     }
     func creatBaseUI(){
         let home = HomeViewController()
-        let homeN = UINavigationController.init(rootViewController: home)
+        let homeN = NavigationController.init(rootViewController: home)
         homeN.tabBarItem.title = "主页"
         homeN.tabBarItem.image = UIImage(named: "home-icon-home-invalid");
         homeN.tabBarItem.selectedImage = UIImage(named: "home-icon-home-click")
         self.addChildViewController(homeN)
         
         let car = CarViewController()
-        let carN = UINavigationController.init(rootViewController: car)
+        let carN = NavigationController.init(rootViewController: car)
         carN.tabBarItem.image = UIImage(named: "home-icon-car-invalid")
         carN.tabBarItem.selectedImage = UIImage(named: "home-icon-car-click")
         carN.tabBarItem.title = "车辆"
         self.addChildViewController(carN)
         
         let list = ListViewController()
-        let listN = UINavigationController.init(rootViewController: list)
+        let listN = NavigationController.init(rootViewController: list)
         listN.tabBarItem.image = UIImage(named: "home-icon-baobiao-on-拷贝")
         listN.tabBarItem.selectedImage = UIImage(named: "home-icon-baobiao-click")
         listN.tabBarItem.title = "报表"
         self.addChildViewController(listN)
         
         let mySelf = MySelfViewController()
-        let mySelfN = UINavigationController.init(rootViewController: mySelf)
+        let mySelfN = NavigationController.init(rootViewController: mySelf)
         mySelfN.tabBarItem.image = UIImage(named: "home-icon-user-click")
         mySelfN.tabBarItem.selectedImage = UIImage(named: "home-icon-user-invalid")
         mySelfN.tabBarItem.title = "我的"

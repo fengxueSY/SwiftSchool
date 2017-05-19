@@ -9,7 +9,7 @@
 import UIKit
 let detailsCellID = "detailsCellID"
 
-class CarDetailsController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
+class CarDetailsController: BaseViewController,UITableViewDelegate,UITableViewDataSource,CarDetailsRow_5_ViewDelegate {
 
     var _tableView = UITableView()
     
@@ -70,9 +70,33 @@ class CarDetailsController: BaseViewController,UITableViewDelegate,UITableViewDa
         }
         if indexPath.row == 5 {
             let firve = CarDetailsRow_5_View.init(frame: CGRect.init(x: 0, y: 0, width: WindowWidth, height: 235))
+            firve.delegate = self
             cell.contentView.addSubview(firve)
         }
         return cell
+    }
+    //MARK: -- 选择的代理
+    func carActionChoose(number: NSInteger) {
+        if number == 0 {
+            //实时位置
+            self.navigationController?.pushViewController(RealTimeAdressController(), animated: true)
+        }
+        if number == 1 {
+            //教学轨迹
+            self.navigationController?.pushViewController(CarTrajecoryController(), animated: true)
+        }
+        if number == 2 {
+            //实时视频
+            self.navigationController?.pushViewController(RealTimeVideoController(), animated: true)
+        }
+        if number == 3 {
+            //教学分析
+            self.tabBarController?.selectedIndex = 2;
+        }
+        if number == 4 {
+            //行车影像
+            self.navigationController?.pushViewController(CarVideoController(), animated: true)
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
