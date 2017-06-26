@@ -49,7 +49,7 @@ class Home_Mid_View: UIView {
         branchLabel = UILabel.init(frame: CGRect.init(x: 0, y: branchButton.frame.maxY, width: upViewW / 2, height: upViewH * 2 / 6))
         branchLabel.textAlignment = NSTextAlignment.center
         branchLabel.font = UIFont.systemFont(ofSize: 12)
-        branchLabel.text = "广州天河区分校"
+        branchLabel.text = "全部"
         upView.addSubview(branchLabel)
         
         let lineLabel:UILabel = UILabel.init(frame: CGRect.init(x: upViewW / 2 - 1, y: upViewH / 8, width: 1, height: upViewH * 6 / 8))
@@ -66,7 +66,7 @@ class Home_Mid_View: UIView {
         recruitLabel = UILabel.init(frame: CGRect.init(x: lineLabel.frame.maxX, y: recruitButton.frame.maxY, width: upViewW / 2, height: upViewH * 2 / 6))
         recruitLabel.textAlignment = NSTextAlignment.center
         recruitLabel.font = UIFont.systemFont(ofSize: 12)
-        recruitLabel.text = "广州天河区分校"
+        recruitLabel.text = "全部"
         upView.addSubview(recruitLabel)
     }
     func creatBaseUI_Down(){

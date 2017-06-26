@@ -18,6 +18,34 @@ class CarDetailsRow_0_View: UIView {
     var speedLabel = UILabel()
     var addressImageView = UIImageView()
     var addressLabel = UILabel()
+    var carDetailsModel = CarDetailsModel(){
+        didSet{
+            if carDetailsModel.photo.isEmpty {
+                headImageView.image = UIImage.init(named: "005")
+            }else{
+                let data: NSData = NSData.init(contentsOf: URL.init(string: carDetailsModel.photo)!)!
+                headImageView.image = UIImage.init(data: data as Data, scale: 1)
+            }
+            carNumberLabel.text = carDetailsModel.platno
+            if carDetailsModel.online == 1 {
+                if carDetailsModel.acc == 1 {
+                    accTypeImageView.image = UIImage.init(named: "car_status_qidong")
+                }else{
+                    accTypeImageView.image = UIImage.init(named: "car_status_xihuo")
+                }
+            }else{
+                accTypeImageView.image = UIImage.init(named: "car_status_lixian")
+            }
+            timeLabel.text = TimePublic().timeStampSwitchDate(timeStamp: Double(carDetailsModel.capturetime))
+            speedLabel.text = String(format: "%.2fkm/h", CGFloat(carDetailsModel.speed / 1000))
+            if carDetailsModel.businesstype == 1 {
+                trainTypeImageView.image = UIImage.init(named: "car_status_peixun")
+            }else{
+                trainTypeImageView.image = UIImage.init(named: "car_status_kongxian")
+            }
+            carTypeImageView.image = UIImage.init(named: String(format: "car_status_%@", carDetailsModel.perdrivtype))
+        }
+    }
     
     
     override init(frame: CGRect) {
@@ -26,11 +54,9 @@ class CarDetailsRow_0_View: UIView {
         let viewH = self.frame.size.height
         
         headImageView = UIImageView.init(frame: CGRect.init(x:viewW / 32 , y: viewH / 6, width: viewW * 4 / 32, height: viewW * 4 / 32))
-        headImageView.image = UIImage.init(named: "005")
         self.addSubview(headImageView)
         
         carNumberLabel = UILabel.init(frame: CGRect.init(x: headImageView.frame.maxX + viewW / 32, y: viewH / 7, width: viewW / 3, height: viewH / 6))
-        carNumberLabel.text = "豫P88888"
         carNumberLabel.textColor = UIColor.blue
         carNumberLabel.font = UIFont.systemFont(ofSize: 14)
         self.addSubview(carNumberLabel)
@@ -39,25 +65,20 @@ class CarDetailsRow_0_View: UIView {
         timeLabel.textColor = UIColor.black
         timeLabel.font = UIFont.systemFont(ofSize: 14)
         timeLabel.textAlignment = NSTextAlignment.right
-        timeLabel.text = "2017-5-15 12:12:12"
         self.addSubview(timeLabel)
         
         carTypeImageView = UIImageView.init(frame: CGRect.init(x: carNumberLabel.frame.minX, y: carNumberLabel.frame.maxY + viewH / 8, width: 16, height: 16))
-        carTypeImageView.image = UIImage.init(named: "car_status_A1")
         self.addSubview(carTypeImageView)
         
         accTypeImageView = UIImageView.init(frame: CGRect.init(x: carTypeImageView.frame.maxX + 8, y: carNumberLabel.frame.maxY + viewH / 8, width: 30, height: viewH / 6))
-        accTypeImageView.image = UIImage.init(named: "car_status_qidong")
         self.addSubview(accTypeImageView)
         
         trainTypeImageView = UIImageView.init(frame: CGRect.init(x: accTypeImageView.frame.maxX + 8, y: carNumberLabel.frame.maxY + viewH / 8, width: 30, height: viewH / 6))
-        trainTypeImageView.image = UIImage.init(named: "car_status_peixun")
         self.addSubview(trainTypeImageView)
         
         speedLabel = UILabel.init(frame: CGRect.init(x: trainTypeImageView.frame.maxX  + 5, y: carNumberLabel.frame.maxY + viewH / 8, width: viewW - trainTypeImageView.frame.maxX - 15, height: viewH / 6))
         speedLabel.textAlignment = NSTextAlignment.right
         speedLabel.textColor = UIColor.red
-        speedLabel.text = "133.05km/h"
         speedLabel.font = UIFont.systemFont(ofSize: 15)
         self.addSubview(speedLabel)
         

@@ -23,6 +23,7 @@ class Home_Up_View: UIView {
         for i in 0 ..< 3  {
             let homeViewUnit = Home_Up_View_Unit.init(frame: CGRect.init(x: Int(Float(Float(unitW * Float(i + 1) + Float(100 * i)))), y: 50, width: 100, height: 100))
             homeViewUnit.actionButton.tag = i + 19000
+            homeViewUnit.tag = i + 19000
             homeViewUnit.headImageView.image = UIImage.init(named: imageArray[i])
             homeViewUnit.nameLabel.text = titleArray[i]
             homeViewUnit.actionButton .addTarget(self, action:#selector(buttonAction(sender:)), for: UIControlEvents.touchUpInside)
@@ -30,14 +31,24 @@ class Home_Up_View: UIView {
         }
         
     }
+    public func setButtonNumber(parm : NSDictionary){
+        let homeview01 : Home_Up_View_Unit = viewWithTag(19000) as! Home_Up_View_Unit
+        homeview01.nameLabel.text = "学员:\(parm.object(forKey: "students") as! NSNumber)人"
+        
+        let homeview02 : Home_Up_View_Unit = viewWithTag(19001) as! Home_Up_View_Unit
+        homeview02.nameLabel.text = "教练:\(parm.object(forKey: "coaches") as! NSNumber)人"
+        
+        let homeview03 : Home_Up_View_Unit = viewWithTag(19002) as! Home_Up_View_Unit
+        homeview03.nameLabel.text = "车辆:\(parm.object(forKey: "vehicles") as! NSNumber)人"
+    }
     func buttonAction(sender:UIButton) {
         if sender.tag == 19000 {
             //学员
         }
-        if sender.tag == 19000 {
+        if sender.tag == 19001 {
             //教练
         }
-        if sender.tag == 19000 {
+        if sender.tag == 19002 {
             //车辆
         }
     }

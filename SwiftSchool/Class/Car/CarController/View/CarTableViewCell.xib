@@ -65,7 +65,7 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_C2" translatesAutoresizingMaskIntoConstraints="NO" id="4Jn-Ra-ymI">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="暂无" translatesAutoresizingMaskIntoConstraints="NO" id="4Jn-Ra-ymI">
                         <rect key="frame" x="78" y="32" width="18" height="15"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="18" id="C0k-Cv-w67"/>
@@ -85,14 +85,14 @@
                             <constraint firstAttribute="width" constant="65" id="nwR-XJ-Vgc"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_kongxian" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ux-9mN">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-Ux-9mN">
                         <rect key="frame" x="136" y="32" width="30" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="IV2-co-hzM"/>
                             <constraint firstAttribute="width" constant="30" id="IwR-je-a35"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car_status_lixian" translatesAutoresizingMaskIntoConstraints="NO" id="2Jh-BF-9yq">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Jh-BF-9yq">
                         <rect key="frame" x="101" y="32" width="30" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="3od-Tj-im5"/>
@@ -139,6 +139,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="accTypeImageView" destination="2Jh-BF-9yq" id="wLh-Q0-sYh"/>
+                <outlet property="addressImageView" destination="yhf-9e-SMR" id="4xB-1U-4RO"/>
                 <outlet property="addressLabel" destination="vsa-g5-vs7" id="2UH-13-uON"/>
                 <outlet property="carNumerLabel" destination="LbN-jm-1Dx" id="akw-DD-q5C"/>
                 <outlet property="carTypeImageView" destination="4Jn-Ra-ymI" id="Lwl-PD-yh1"/>
@@ -154,10 +155,8 @@
     </objects>
     <resources>
         <image name="005" width="80" height="80"/>
-        <image name="car_status_C2" width="18" height="15"/>
-        <image name="car_status_kongxian" width="30" height="15"/>
-        <image name="car_status_lixian" width="30" height="15"/>
         <image name="carlist_banding" width="20" height="20"/>
         <image name="common_place" width="10" height="14"/>
+        <image name="暂无" width="30" height="15"/>
     </resources>
 </document>

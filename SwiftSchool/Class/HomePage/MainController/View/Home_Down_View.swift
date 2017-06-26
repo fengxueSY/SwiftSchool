@@ -18,8 +18,6 @@ class Home_Down_View: UIView,UICollectionViewDelegate,UICollectionViewDataSource
     var maxNumber = CGFloat()
     
     var allStudentsNumber : allNumberBlock?
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         dataArray = NSMutableArray.init()
@@ -59,7 +57,6 @@ class Home_Down_View: UIView,UICollectionViewDelegate,UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:Home_Down_CollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: home_down_collectionCellID, for: indexPath) as! Home_Down_CollectionCell
         let num:CGFloat = dataArray[dataArray.count - 1 - indexPath.row] as! CGFloat
-//        let num:CGFloat = dataArray[indexPath.row] as! CGFloat
         let cellLabelHeight:CGFloat = self.frame.size.height - 40
         let midLabelHeight:CGFloat = (num / maxNumber) * cellLabelHeight
         let viewH:CGFloat = cell.frame.size.height

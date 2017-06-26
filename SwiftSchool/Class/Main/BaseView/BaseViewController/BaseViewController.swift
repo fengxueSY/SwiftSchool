@@ -6,10 +6,11 @@
 //  Copyright © 2017年 666gps. All rights reserved.
 //
 
+/*$(PRODUCT_NAME:c99extidentifier)*/
 
 let WindowHeight = UIScreen.main.applicationFrame.size.height
 let WindowWidth = UIScreen.main.applicationFrame.size.width
-
+let appOnlyIndicate : String = "swiftSchool" as String
 
 import UIKit
 

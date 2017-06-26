@@ -24,6 +24,8 @@ class MySelfViewController: BaseViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         self.title = "我的"
         creatBaseUI()
+        let useI = UserInformationSing.userInfo
+        print("----------------- \(useI.tokenId)")
     }
     func creatBaseUI(){
         tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: WindowWidth, height: WindowHeight), style: UITableViewStyle.plain)

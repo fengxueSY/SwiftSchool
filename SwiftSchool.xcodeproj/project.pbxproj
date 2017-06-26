@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FF5186F68F498ED65D394C1 /* Pods_SwiftSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */; };
+		1FF5186F68F498ED65D394C1 /* Pods_SwiftSchool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2F025EE71E9CBA9800525EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EE51E9CBA9800525EFE /* Main.storyboard */; };
 		2F025EE91E9CBA9800525EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EE81E9CBA9800525EFE /* Assets.xcassets */; };
 		2F025EEC1E9CBA9800525EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F025EEA1E9CBA9800525EFE /* LaunchScreen.storyboard */; };
@@ -19,6 +19,25 @@
 		2F0545C21E9DB4BA00872C86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0545C01E9DB4BA00872C86 /* LoginController.swift */; };
 		2F0545C31E9DB4BA00872C86 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0545C11E9DB4BA00872C86 /* LoginController.xib */; };
 		2F08D5D01ECBEEA2000FD7DD /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F08D5CF1ECBEEA2000FD7DD /* RGBColor.swift */; };
+		2F0CFEC11ED3C20E00899F3A /* SwiftSchoolSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CFEC01ED3C20E00899F3A /* SwiftSchoolSingle.swift */; };
+		2F0CFED21ED428A600899F3A /* TimePublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0CFED11ED428A600899F3A /* TimePublic.swift */; };
+		2F0D55D21ED667240053BF76 /* RSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0D55D11ED667240053BF76 /* RSAEncrypt.m */; };
+		2F0EF91A1EF1098200903FCF /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9191EF1098200903FCF /* ListController.swift */; };
+		2F0EF91E1EF1167D00903FCF /* ZhaoshengCounModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF91D1EF1167D00903FCF /* ZhaoshengCounModel.swift */; };
+		2F0EF9201EF1168B00903FCF /* CoactTeachCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF91F1EF1168B00903FCF /* CoactTeachCountModel.swift */; };
+		2F0EF9221EF1169D00903FCF /* TeachCarCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9211EF1169D00903FCF /* TeachCarCountModel.swift */; };
+		2F0EF9241EF116B100903FCF /* StudentsCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9231EF116B100903FCF /* StudentsCountModel.swift */; };
+		2F0EF9261EF116BC00903FCF /* StudetsTestCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9251EF116BC00903FCF /* StudetsTestCountModel.swift */; };
+		2F0EF9281EF116CA00903FCF /* CoachAppointmentCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9271EF116CA00903FCF /* CoachAppointmentCountModel.swift */; };
+		2F0EF92A1EF116D700903FCF /* StudetsAppointmentCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9291EF116D700903FCF /* StudetsAppointmentCountModel.swift */; };
+		2F0EF9321EF1200500903FCF /* ListUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0EF9311EF1200500903FCF /* ListUpView.swift */; };
+		2F0EF9341EF1207E00903FCF /* ListUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F0EF9331EF1207E00903FCF /* ListUpView.xib */; };
+		2F13D1DE1EE8FB8D0083BA93 /* CarListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F13D1DD1EE8FB8D0083BA93 /* CarListModel.swift */; };
+		2F1A22C31ED55C07007E99AD /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A22701ED55C07007E99AD /* Base64.m */; };
+		2F1A22C41ED55C07007E99AD /* CRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A22721ED55C07007E99AD /* CRSA.m */; };
+		2F1A22C51ED55C07007E99AD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1A22731ED55C07007E99AD /* libcrypto.a */; };
+		2F1A22C61ED55C07007E99AD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1A22741ED55C07007E99AD /* libssl.a */; };
+		2F1A22C71ED55C07007E99AD /* NSString+RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1A22761ED55C07007E99AD /* NSString+RSA.m */; };
 		2F1B0DAA1ECD52E90018E8E0 /* MySelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B0DA71ECD52E90018E8E0 /* MySelfViewController.swift */; };
 		2F1B0DB01ECD53450018E8E0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B0DAD1ECD53450018E8E0 /* ListViewController.swift */; };
 		2F1B0DBB1ECD53880018E8E0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1B0DB31ECD53880018E8E0 /* HomeViewController.swift */; };
@@ -45,6 +64,10 @@
 		2F23A81D1EC9859800C47621 /* CarDetailsRow_5_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A81C1EC9859800C47621 /* CarDetailsRow_5_View.swift */; };
 		2F23A8201EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F23A81E1EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift */; };
 		2F23A8211EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */; };
+		2F33E94F1EF22258001EB0D8 /* MySelfStudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33E94E1EF22258001EB0D8 /* MySelfStudentModel.swift */; };
+		2F41238B1EEFC17B004E1B36 /* CarDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41238A1EEFC17B004E1B36 /* CarDetailsModel.swift */; };
+		2F41238E1EEFD420004E1B36 /* DeBugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41238D1EEFD420004E1B36 /* DeBugLog.swift */; };
+		2F4123901EEFD516004E1B36 /* TTAlertVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F41238F1EEFD516004E1B36 /* TTAlertVIew.swift */; };
 		2FADD99D1ECC1E0E00E77D67 /* RightImageLeftTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FADD99C1ECC1E0E00E77D67 /* RightImageLeftTitleButton.swift */; };
 		2FADD9A11ECC34DB00E77D67 /* StringPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FADD9A01ECC34DB00E77D67 /* StringPublic.swift */; };
 		2FB817D61ECAEC35009851FC /* RealTimeVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB817D51ECAEC35009851FC /* RealTimeVideoController.swift */; };
@@ -53,6 +76,13 @@
 		2FB817F21ECAEEBD009851FC /* CarTrajecoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB817F11ECAEEBD009851FC /* CarTrajecoryController.swift */; };
 		2FB817FF1ECB03BB009851FC /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB817FD1ECB03BB009851FC /* BundleExtension.swift */; };
 		2FB818001ECB03BB009851FC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB817FE1ECB03BB009851FC /* RealmManager.swift */; };
+		2FC53C801EDE569B00857F6D /* HomepageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC53C7F1EDE569B00857F6D /* HomepageModel.swift */; };
+		2FC7D3431EDFFD8600234A05 /* RecruitPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC7D3421EDFFD8600234A05 /* RecruitPlaceModel.swift */; };
+		2FEBB2A91ED7FB0700FE3201 /* UserInformationSing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBB2A81ED7FB0700FE3201 /* UserInformationSing.swift */; };
+		2FEC10571EDFA4F100BCE136 /* BrschList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEC10561EDFA4F100BCE136 /* BrschList.swift */; };
+		2FF16B491ED95CA400A94EA6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF16B481ED95CA400A94EA6 /* Security.framework */; };
+		2FF16B4F1ED95DE100A94EA6 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF16B4C1ED95DE100A94EA6 /* SSKeychain.m */; };
+		2FF16B501ED95DE100A94EA6 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF16B4E1ED95DE100A94EA6 /* SSKeychainQuery.m */; };
 		2FF224AE1ECE7A8C00972D9C /* MySelfStudentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF224AD1ECE7A8C00972D9C /* MySelfStudentsController.swift */; };
 		2FF224B11ECE7B9600972D9C /* MySelfStudentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF224AF1ECE7B9600972D9C /* MySelfStudentsCell.swift */; };
 		2FF224B21ECE7B9600972D9C /* MySelfStudentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF224B01ECE7B9600972D9C /* MySelfStudentsCell.xib */; };
@@ -95,6 +125,105 @@
 		2F0545C01E9DB4BA00872C86 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2F0545C11E9DB4BA00872C86 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
 		2F08D5CF1ECBEEA2000FD7DD /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
+		2F0CFEC01ED3C20E00899F3A /* SwiftSchoolSingle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSchoolSingle.swift; sourceTree = "<group>"; };
+		2F0CFECC1ED4221300899F3A /* SwiftSchool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSchool-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F0CFED11ED428A600899F3A /* TimePublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimePublic.swift; sourceTree = "<group>"; };
+		2F0D55D01ED667240053BF76 /* RSAEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncrypt.h; sourceTree = "<group>"; };
+		2F0D55D11ED667240053BF76 /* RSAEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncrypt.m; sourceTree = "<group>"; };
+		2F0EF9191EF1098200903FCF /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		2F0EF91D1EF1167D00903FCF /* ZhaoshengCounModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhaoshengCounModel.swift; sourceTree = "<group>"; };
+		2F0EF91F1EF1168B00903FCF /* CoactTeachCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoactTeachCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9211EF1169D00903FCF /* TeachCarCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeachCarCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9231EF116B100903FCF /* StudentsCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9251EF116BC00903FCF /* StudetsTestCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudetsTestCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9271EF116CA00903FCF /* CoachAppointmentCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachAppointmentCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9291EF116D700903FCF /* StudetsAppointmentCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudetsAppointmentCountModel.swift; sourceTree = "<group>"; };
+		2F0EF9311EF1200500903FCF /* ListUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListUpView.swift; sourceTree = "<group>"; };
+		2F0EF9331EF1207E00903FCF /* ListUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListUpView.xib; sourceTree = "<group>"; };
+		2F13D1DD1EE8FB8D0083BA93 /* CarListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarListModel.swift; sourceTree = "<group>"; };
+		2F1A226F1ED55C07007E99AD /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		2F1A22701ED55C07007E99AD /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		2F1A22711ED55C07007E99AD /* CRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSA.h; sourceTree = "<group>"; };
+		2F1A22721ED55C07007E99AD /* CRSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSA.m; sourceTree = "<group>"; };
+		2F1A22731ED55C07007E99AD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		2F1A22741ED55C07007E99AD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		2F1A22751ED55C07007E99AD /* NSString+RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RSA.h"; sourceTree = "<group>"; };
+		2F1A22761ED55C07007E99AD /* NSString+RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RSA.m"; sourceTree = "<group>"; };
+		2F1A22781ED55C07007E99AD /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		2F1A22791ED55C07007E99AD /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		2F1A227A1ED55C07007E99AD /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		2F1A227B1ED55C07007E99AD /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		2F1A227C1ED55C07007E99AD /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		2F1A227D1ED55C07007E99AD /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		2F1A227E1ED55C07007E99AD /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		2F1A227F1ED55C07007E99AD /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		2F1A22801ED55C07007E99AD /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		2F1A22811ED55C07007E99AD /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		2F1A22821ED55C07007E99AD /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		2F1A22831ED55C07007E99AD /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		2F1A22841ED55C07007E99AD /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		2F1A22851ED55C07007E99AD /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		2F1A22861ED55C07007E99AD /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		2F1A22871ED55C07007E99AD /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		2F1A22881ED55C07007E99AD /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		2F1A22891ED55C07007E99AD /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		2F1A228A1ED55C07007E99AD /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		2F1A228B1ED55C07007E99AD /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		2F1A228C1ED55C07007E99AD /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		2F1A228D1ED55C07007E99AD /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		2F1A228E1ED55C07007E99AD /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		2F1A228F1ED55C07007E99AD /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		2F1A22901ED55C07007E99AD /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		2F1A22911ED55C07007E99AD /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		2F1A22921ED55C07007E99AD /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		2F1A22931ED55C07007E99AD /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		2F1A22941ED55C07007E99AD /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		2F1A22951ED55C07007E99AD /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		2F1A22961ED55C07007E99AD /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		2F1A22971ED55C07007E99AD /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		2F1A22981ED55C07007E99AD /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		2F1A22991ED55C07007E99AD /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		2F1A229A1ED55C07007E99AD /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		2F1A229B1ED55C07007E99AD /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		2F1A229C1ED55C07007E99AD /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		2F1A229D1ED55C07007E99AD /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		2F1A229E1ED55C07007E99AD /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		2F1A229F1ED55C07007E99AD /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		2F1A22A01ED55C07007E99AD /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		2F1A22A11ED55C07007E99AD /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		2F1A22A21ED55C07007E99AD /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		2F1A22A31ED55C07007E99AD /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		2F1A22A41ED55C07007E99AD /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		2F1A22A51ED55C07007E99AD /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		2F1A22A61ED55C07007E99AD /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		2F1A22A71ED55C07007E99AD /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		2F1A22A81ED55C07007E99AD /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		2F1A22A91ED55C07007E99AD /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		2F1A22AA1ED55C07007E99AD /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		2F1A22AB1ED55C07007E99AD /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		2F1A22AC1ED55C07007E99AD /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		2F1A22AD1ED55C07007E99AD /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		2F1A22AE1ED55C07007E99AD /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		2F1A22AF1ED55C07007E99AD /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		2F1A22B01ED55C07007E99AD /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		2F1A22B11ED55C07007E99AD /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		2F1A22B21ED55C07007E99AD /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		2F1A22B31ED55C07007E99AD /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		2F1A22B41ED55C07007E99AD /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		2F1A22B51ED55C07007E99AD /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		2F1A22B61ED55C07007E99AD /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		2F1A22B71ED55C07007E99AD /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		2F1A22B81ED55C07007E99AD /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		2F1A22B91ED55C07007E99AD /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		2F1A22BA1ED55C07007E99AD /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		2F1A22BB1ED55C07007E99AD /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		2F1A22BC1ED55C07007E99AD /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		2F1A22BD1ED55C07007E99AD /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		2F1A22BE1ED55C07007E99AD /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		2F1A22BF1ED55C07007E99AD /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		2F1A22C01ED55C07007E99AD /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		2F1A22C11ED55C07007E99AD /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		2F1A22C21ED55C07007E99AD /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
 		2F1B0DA71ECD52E90018E8E0 /* MySelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySelfViewController.swift; sourceTree = "<group>"; };
 		2F1B0DAD1ECD53450018E8E0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		2F1B0DB31ECD53880018E8E0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +250,10 @@
 		2F23A81C1EC9859800C47621 /* CarDetailsRow_5_View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsRow_5_View.swift; sourceTree = "<group>"; };
 		2F23A81E1EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsCarFunctionCell.swift; sourceTree = "<group>"; };
 		2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarDetailsCarFunctionCell.xib; sourceTree = "<group>"; };
+		2F33E94E1EF22258001EB0D8 /* MySelfStudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySelfStudentModel.swift; sourceTree = "<group>"; };
+		2F41238A1EEFC17B004E1B36 /* CarDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarDetailsModel.swift; sourceTree = "<group>"; };
+		2F41238D1EEFD420004E1B36 /* DeBugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeBugLog.swift; sourceTree = "<group>"; };
+		2F41238F1EEFD516004E1B36 /* TTAlertVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTAlertVIew.swift; sourceTree = "<group>"; };
 		2F47D3922F30DD586835DE5B /* Pods-SwiftSchool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSchool.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSchool/Pods-SwiftSchool.release.xcconfig"; sourceTree = "<group>"; };
 		2FADD99C1ECC1E0E00E77D67 /* RightImageLeftTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightImageLeftTitleButton.swift; sourceTree = "<group>"; };
 		2FADD9A01ECC34DB00E77D67 /* StringPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringPublic.swift; sourceTree = "<group>"; };
@@ -130,6 +263,16 @@
 		2FB817F11ECAEEBD009851FC /* CarTrajecoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarTrajecoryController.swift; sourceTree = "<group>"; };
 		2FB817FD1ECB03BB009851FC /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		2FB817FE1ECB03BB009851FC /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		2FC53C7F1EDE569B00857F6D /* HomepageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageModel.swift; sourceTree = "<group>"; };
+		2FC7D3421EDFFD8600234A05 /* RecruitPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecruitPlaceModel.swift; sourceTree = "<group>"; };
+		2FEBB2A81ED7FB0700FE3201 /* UserInformationSing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInformationSing.swift; sourceTree = "<group>"; };
+		2FEC10561EDFA4F100BCE136 /* BrschList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrschList.swift; sourceTree = "<group>"; };
+		2FF16B471ED95B3100A94EA6 /* SwiftSchool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftSchool.entitlements; sourceTree = "<group>"; };
+		2FF16B481ED95CA400A94EA6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2FF16B4B1ED95DE100A94EA6 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		2FF16B4C1ED95DE100A94EA6 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		2FF16B4D1ED95DE100A94EA6 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		2FF16B4E1ED95DE100A94EA6 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		2FF224AD1ECE7A8C00972D9C /* MySelfStudentsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySelfStudentsController.swift; sourceTree = "<group>"; };
 		2FF224AF1ECE7B9600972D9C /* MySelfStudentsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySelfStudentsCell.swift; sourceTree = "<group>"; };
 		2FF224B01ECE7B9600972D9C /* MySelfStudentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySelfStudentsCell.xib; sourceTree = "<group>"; };
@@ -144,7 +287,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF16B491ED95CA400A94EA6 /* Security.framework in Frameworks */,
+				2F1A22C51ED55C07007E99AD /* libcrypto.a in Frameworks */,
 				1FF5186F68F498ED65D394C1 /* Pods_SwiftSchool.framework in Frameworks */,
+				2F1A22C61ED55C07007E99AD /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +320,7 @@
 				2F025EDF1E9CBA9800525EFE /* Products */,
 				DB7ADACFF5A9B21FB0E244C7 /* Pods */,
 				4540E960D94CC3DCB2A48804 /* Frameworks */,
+				2F0CFECC1ED4221300899F3A /* SwiftSchool-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +337,7 @@
 		2F025EE01E9CBA9800525EFE /* SwiftSchool */ = {
 			isa = PBXGroup;
 			children = (
+				2FF16B471ED95B3100A94EA6 /* SwiftSchool.entitlements */,
 				2F025F0F1E9CBD7F00525EFE /* Class */,
 				2F025EE51E9CBA9800525EFE /* Main.storyboard */,
 				2F025EE81E9CBA9800525EFE /* Assets.xcassets */,
@@ -254,6 +402,7 @@
 		2F0260C81E9CBD7F00525EFE /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2F0EF9151EF1061200903FCF /* ListController */,
 				2F1B0DAB1ECD53450018E8E0 /* MainController */,
 			);
 			path = List;
@@ -327,6 +476,8 @@
 		2F0261311E9CBD7F00525EFE /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				2F0CFED01ED4288300899F3A /* TimePublic */,
+				2F0CFEBF1ED3C1F300899F3A /* Single */,
 				2FADD99F1ECC34C900E77D67 /* StringPublic */,
 			);
 			path = Public;
@@ -343,6 +494,7 @@
 		2F0261621E9CBD8000525EFE /* ThreeLib */ = {
 			isa = PBXGroup;
 			children = (
+				2F1A226D1ED55C07007E99AD /* include */,
 			);
 			path = ThreeLib;
 			sourceTree = "<group>";
@@ -350,6 +502,8 @@
 		2F0261A61E9CBD8000525EFE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				2F41238C1EEFD420004E1B36 /* ToolClass */,
+				2F0488C81ED56D0200107867 /* OCTool */,
 				2FADD9991ECC1D6C00E77D67 /* Button */,
 				2F08D5CE1ECBEE7F000FD7DD /* Color */,
 				2FB817FC1ECB03BB009851FC /* Realm */,
@@ -366,12 +520,186 @@
 			path = MySelf;
 			sourceTree = "<group>";
 		};
+		2F0488C81ED56D0200107867 /* OCTool */ = {
+			isa = PBXGroup;
+			children = (
+				2FF16B4A1ED95DE100A94EA6 /* SSKeychain */,
+				2F0D55D01ED667240053BF76 /* RSAEncrypt.h */,
+				2F0D55D11ED667240053BF76 /* RSAEncrypt.m */,
+			);
+			path = OCTool;
+			sourceTree = "<group>";
+		};
 		2F08D5CE1ECBEE7F000FD7DD /* Color */ = {
 			isa = PBXGroup;
 			children = (
 				2F08D5CF1ECBEEA2000FD7DD /* RGBColor.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		2F0CFEBF1ED3C1F300899F3A /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				2F0CFEC01ED3C20E00899F3A /* SwiftSchoolSingle.swift */,
+				2FEBB2A81ED7FB0700FE3201 /* UserInformationSing.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		2F0CFED01ED4288300899F3A /* TimePublic */ = {
+			isa = PBXGroup;
+			children = (
+				2F0CFED11ED428A600899F3A /* TimePublic.swift */,
+			);
+			path = TimePublic;
+			sourceTree = "<group>";
+		};
+		2F0EF9151EF1061200903FCF /* ListController */ = {
+			isa = PBXGroup;
+			children = (
+				2F0EF9161EF1061200903FCF /* Controller */,
+				2F0EF9171EF1061200903FCF /* Model */,
+				2F0EF9181EF1061200903FCF /* View */,
+			);
+			path = ListController;
+			sourceTree = "<group>";
+		};
+		2F0EF9161EF1061200903FCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F0EF9191EF1098200903FCF /* ListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F0EF9171EF1061200903FCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F0EF91D1EF1167D00903FCF /* ZhaoshengCounModel.swift */,
+				2F0EF91F1EF1168B00903FCF /* CoactTeachCountModel.swift */,
+				2F0EF9211EF1169D00903FCF /* TeachCarCountModel.swift */,
+				2F0EF9231EF116B100903FCF /* StudentsCountModel.swift */,
+				2F0EF9251EF116BC00903FCF /* StudetsTestCountModel.swift */,
+				2F0EF9271EF116CA00903FCF /* CoachAppointmentCountModel.swift */,
+				2F0EF9291EF116D700903FCF /* StudetsAppointmentCountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F0EF9181EF1061200903FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F0EF9311EF1200500903FCF /* ListUpView.swift */,
+				2F0EF9331EF1207E00903FCF /* ListUpView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F1A226D1ED55C07007E99AD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A226E1ED55C07007E99AD /* Base64 */,
+				2F1A22731ED55C07007E99AD /* libcrypto.a */,
+				2F1A22741ED55C07007E99AD /* libssl.a */,
+				2F1A22751ED55C07007E99AD /* NSString+RSA.h */,
+				2F1A22761ED55C07007E99AD /* NSString+RSA.m */,
+				2F1A22771ED55C07007E99AD /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		2F1A226E1ED55C07007E99AD /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A226F1ED55C07007E99AD /* Base64.h */,
+				2F1A22701ED55C07007E99AD /* Base64.m */,
+				2F1A22711ED55C07007E99AD /* CRSA.h */,
+				2F1A22721ED55C07007E99AD /* CRSA.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		2F1A22771ED55C07007E99AD /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				2F1A22781ED55C07007E99AD /* aes.h */,
+				2F1A22791ED55C07007E99AD /* asn1.h */,
+				2F1A227A1ED55C07007E99AD /* asn1_mac.h */,
+				2F1A227B1ED55C07007E99AD /* asn1t.h */,
+				2F1A227C1ED55C07007E99AD /* bio.h */,
+				2F1A227D1ED55C07007E99AD /* blowfish.h */,
+				2F1A227E1ED55C07007E99AD /* bn.h */,
+				2F1A227F1ED55C07007E99AD /* buffer.h */,
+				2F1A22801ED55C07007E99AD /* camellia.h */,
+				2F1A22811ED55C07007E99AD /* cast.h */,
+				2F1A22821ED55C07007E99AD /* cmac.h */,
+				2F1A22831ED55C07007E99AD /* cms.h */,
+				2F1A22841ED55C07007E99AD /* comp.h */,
+				2F1A22851ED55C07007E99AD /* conf.h */,
+				2F1A22861ED55C07007E99AD /* conf_api.h */,
+				2F1A22871ED55C07007E99AD /* crypto.h */,
+				2F1A22881ED55C07007E99AD /* des.h */,
+				2F1A22891ED55C07007E99AD /* des_old.h */,
+				2F1A228A1ED55C07007E99AD /* dh.h */,
+				2F1A228B1ED55C07007E99AD /* dsa.h */,
+				2F1A228C1ED55C07007E99AD /* dso.h */,
+				2F1A228D1ED55C07007E99AD /* dtls1.h */,
+				2F1A228E1ED55C07007E99AD /* e_os2.h */,
+				2F1A228F1ED55C07007E99AD /* ebcdic.h */,
+				2F1A22901ED55C07007E99AD /* ec.h */,
+				2F1A22911ED55C07007E99AD /* ecdh.h */,
+				2F1A22921ED55C07007E99AD /* ecdsa.h */,
+				2F1A22931ED55C07007E99AD /* engine.h */,
+				2F1A22941ED55C07007E99AD /* err.h */,
+				2F1A22951ED55C07007E99AD /* evp.h */,
+				2F1A22961ED55C07007E99AD /* hmac.h */,
+				2F1A22971ED55C07007E99AD /* idea.h */,
+				2F1A22981ED55C07007E99AD /* krb5_asn.h */,
+				2F1A22991ED55C07007E99AD /* kssl.h */,
+				2F1A229A1ED55C07007E99AD /* lhash.h */,
+				2F1A229B1ED55C07007E99AD /* md4.h */,
+				2F1A229C1ED55C07007E99AD /* md5.h */,
+				2F1A229D1ED55C07007E99AD /* mdc2.h */,
+				2F1A229E1ED55C07007E99AD /* modes.h */,
+				2F1A229F1ED55C07007E99AD /* obj_mac.h */,
+				2F1A22A01ED55C07007E99AD /* objects.h */,
+				2F1A22A11ED55C07007E99AD /* ocsp.h */,
+				2F1A22A21ED55C07007E99AD /* opensslconf.h */,
+				2F1A22A31ED55C07007E99AD /* opensslv.h */,
+				2F1A22A41ED55C07007E99AD /* ossl_typ.h */,
+				2F1A22A51ED55C07007E99AD /* pem.h */,
+				2F1A22A61ED55C07007E99AD /* pem2.h */,
+				2F1A22A71ED55C07007E99AD /* pkcs12.h */,
+				2F1A22A81ED55C07007E99AD /* pkcs7.h */,
+				2F1A22A91ED55C07007E99AD /* pqueue.h */,
+				2F1A22AA1ED55C07007E99AD /* rand.h */,
+				2F1A22AB1ED55C07007E99AD /* rc2.h */,
+				2F1A22AC1ED55C07007E99AD /* rc4.h */,
+				2F1A22AD1ED55C07007E99AD /* ripemd.h */,
+				2F1A22AE1ED55C07007E99AD /* rsa.h */,
+				2F1A22AF1ED55C07007E99AD /* safestack.h */,
+				2F1A22B01ED55C07007E99AD /* seed.h */,
+				2F1A22B11ED55C07007E99AD /* sha.h */,
+				2F1A22B21ED55C07007E99AD /* srp.h */,
+				2F1A22B31ED55C07007E99AD /* srtp.h */,
+				2F1A22B41ED55C07007E99AD /* ssl.h */,
+				2F1A22B51ED55C07007E99AD /* ssl2.h */,
+				2F1A22B61ED55C07007E99AD /* ssl23.h */,
+				2F1A22B71ED55C07007E99AD /* ssl3.h */,
+				2F1A22B81ED55C07007E99AD /* stack.h */,
+				2F1A22B91ED55C07007E99AD /* symhacks.h */,
+				2F1A22BA1ED55C07007E99AD /* tls1.h */,
+				2F1A22BB1ED55C07007E99AD /* ts.h */,
+				2F1A22BC1ED55C07007E99AD /* txt_db.h */,
+				2F1A22BD1ED55C07007E99AD /* ui.h */,
+				2F1A22BE1ED55C07007E99AD /* ui_compat.h */,
+				2F1A22BF1ED55C07007E99AD /* whrlpool.h */,
+				2F1A22C01ED55C07007E99AD /* x509.h */,
+				2F1A22C11ED55C07007E99AD /* x509_vfy.h */,
+				2F1A22C21ED55C07007E99AD /* x509v3.h */,
+			);
+			path = openssl;
 			sourceTree = "<group>";
 		};
 		2F1B0DA51ECD52E90018E8E0 /* MianController */ = {
@@ -463,6 +791,8 @@
 		2F1B0DB41ECD53880018E8E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FC53C7F1EDE569B00857F6D /* HomepageModel.swift */,
+				2FEC10561EDFA4F100BCE136 /* BrschList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -501,6 +831,7 @@
 		2F1B0DD11ECD9D1D0018E8E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FC7D3421EDFFD8600234A05 /* RecruitPlaceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -533,6 +864,7 @@
 		2F2109CB1EC5BA95003AB6C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F13D1DD1EE8FB8D0083BA93 /* CarListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -600,6 +932,7 @@
 		2F2109FF1EC5BDCF003AB6C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F41238A1EEFC17B004E1B36 /* CarDetailsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -616,6 +949,15 @@
 				2F23A81F1EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2F41238C1EEFD420004E1B36 /* ToolClass */ = {
+			isa = PBXGroup;
+			children = (
+				2F41238D1EEFD420004E1B36 /* DeBugLog.swift */,
+				2F41238F1EEFD516004E1B36 /* TTAlertVIew.swift */,
+			);
+			path = ToolClass;
 			sourceTree = "<group>";
 		};
 		2FADD9991ECC1D6C00E77D67 /* Button */ = {
@@ -739,6 +1081,17 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		2FF16B4A1ED95DE100A94EA6 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				2FF16B4B1ED95DE100A94EA6 /* SSKeychain.h */,
+				2FF16B4C1ED95DE100A94EA6 /* SSKeychain.m */,
+				2FF16B4D1ED95DE100A94EA6 /* SSKeychainQuery.h */,
+				2FF16B4E1ED95DE100A94EA6 /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
 		2FF224A91ECE7A7A00972D9C /* MySelfStudents */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +1113,7 @@
 		2FF224AB1ECE7A7A00972D9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F33E94E1EF22258001EB0D8 /* MySelfStudentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -776,6 +1130,7 @@
 		4540E960D94CC3DCB2A48804 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF16B481ED95CA400A94EA6 /* Security.framework */,
 				6075B96F60E7B7A828F216F2 /* Pods_SwiftSchool.framework */,
 			);
 			name = Frameworks;
@@ -861,9 +1216,14 @@
 				TargetAttributes = {
 					2F025EDD1E9CBA9800525EFE = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = H2JQF5KMYR;
+						DevelopmentTeam = WDD7BKQBDJ;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2F025EF11E9CBA9800525EFE = {
 						CreatedOnToolsVersion = 8.3;
@@ -913,6 +1273,7 @@
 				2F23A8211EC98D2A00C47621 /* CarDetailsCarFunctionCell.xib in Resources */,
 				2F025EE71E9CBA9800525EFE /* Main.storyboard in Resources */,
 				2FF224B21ECE7B9600972D9C /* MySelfStudentsCell.xib in Resources */,
+				2F0EF9341EF1207E00903FCF /* ListUpView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,19 +1346,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F13D1DE1EE8FB8D0083BA93 /* CarListModel.swift in Sources */,
 				2FADD99D1ECC1E0E00E77D67 /* RightImageLeftTitleButton.swift in Sources */,
 				2FF224B61ECE95F100972D9C /* School_URL.swift in Sources */,
 				2F23A8201EC98D2A00C47621 /* CarDetailsCarFunctionCell.swift in Sources */,
+				2F0EF9321EF1200500903FCF /* ListUpView.swift in Sources */,
 				2F1B0DB01ECD53450018E8E0 /* ListViewController.swift in Sources */,
+				2FEBB2A91ED7FB0700FE3201 /* UserInformationSing.swift in Sources */,
+				2FC53C801EDE569B00857F6D /* HomepageModel.swift in Sources */,
+				2F0D55D21ED667240053BF76 /* RSAEncrypt.m in Sources */,
 				2F1B0DBC1ECD53880018E8E0 /* Home_Down_CollectionCell.swift in Sources */,
 				2FB817D61ECAEC35009851FC /* RealTimeVideoController.swift in Sources */,
+				2F33E94F1EF22258001EB0D8 /* MySelfStudentModel.swift in Sources */,
 				2FB817DC1ECAECDD009851FC /* RealTimeAdressController.swift in Sources */,
+				2F4123901EEFD516004E1B36 /* TTAlertVIew.swift in Sources */,
+				2F0EF9281EF116CA00903FCF /* CoachAppointmentCountModel.swift in Sources */,
 				2F1B0DCB1ECD6C400018E8E0 /* ListCell.swift in Sources */,
+				2F41238E1EEFD420004E1B36 /* DeBugLog.swift in Sources */,
+				2F0EF9261EF116BC00903FCF /* StudetsTestCountModel.swift in Sources */,
 				2F23A8171EC94D0800C47621 /* CarDetailsRow_0_View.swift in Sources */,
 				2F23A81B1EC97FA600C47621 /* CarDetailsRow_4_View.swift in Sources */,
+				2F1A22C71ED55C07007E99AD /* NSString+RSA.m in Sources */,
 				2F1B0DBF1ECD53880018E8E0 /* Home_Up_View.swift in Sources */,
+				2F0EF91E1EF1167D00903FCF /* ZhaoshengCounModel.swift in Sources */,
 				2F23A8191EC9793E00C47621 /* CarDetailsRow_1_View.swift in Sources */,
 				2F1B0DC01ECD53880018E8E0 /* Home_Up_View_Unit.swift in Sources */,
+				2F0CFED21ED428A600899F3A /* TimePublic.swift in Sources */,
 				2F0545C21E9DB4BA00872C86 /* LoginController.swift in Sources */,
 				2F23A8141EC93B9600C47621 /* CarDetailsCell.swift in Sources */,
 				2FF224B11ECE7B9600972D9C /* MySelfStudentsCell.swift in Sources */,
@@ -1005,13 +1379,22 @@
 				2F1B0DBB1ECD53880018E8E0 /* HomeViewController.swift in Sources */,
 				2F23A81D1EC9859800C47621 /* CarDetailsRow_5_View.swift in Sources */,
 				2F0263AB1E9CBDF700525EFE /* AppDelegate.swift in Sources */,
+				2F0EF9221EF1169D00903FCF /* TeachCarCountModel.swift in Sources */,
+				2FF16B501ED95DE100A94EA6 /* SSKeychainQuery.m in Sources */,
 				2F2109FC1EC5BA95003AB6C6 /* TopSiftView.swift in Sources */,
 				2FB817F21ECAEEBD009851FC /* CarTrajecoryController.swift in Sources */,
 				2F0263AD1E9CBE4700525EFE /* TabBarController.swift in Sources */,
 				2F1B0DBE1ECD53880018E8E0 /* Home_Mid_View.swift in Sources */,
+				2F0EF9201EF1168B00903FCF /* CoactTeachCountModel.swift in Sources */,
 				2FADD9A11ECC34DB00E77D67 /* StringPublic.swift in Sources */,
+				2F0CFEC11ED3C20E00899F3A /* SwiftSchoolSingle.swift in Sources */,
 				2F2109FA1EC5BA95003AB6C6 /* CarTableViewCell.swift in Sources */,
+				2F1A22C41ED55C07007E99AD /* CRSA.m in Sources */,
+				2F1A22C31ED55C07007E99AD /* Base64.m in Sources */,
 				2F210A021EC5BDF6003AB6C6 /* CarDetailsController.swift in Sources */,
+				2FC7D3431EDFFD8600234A05 /* RecruitPlaceModel.swift in Sources */,
+				2F0EF92A1EF116D700903FCF /* StudetsAppointmentCountModel.swift in Sources */,
+				2FEC10571EDFA4F100BCE136 /* BrschList.swift in Sources */,
 				2F0263AF1E9CC1C700525EFE /* BaseViewController.swift in Sources */,
 				2F2109F91EC5BA95003AB6C6 /* CarViewController.swift in Sources */,
 				2F1B0DCE1ECD71AC0018E8E0 /* Home_Down_View_FlowLayout.swift in Sources */,
@@ -1019,11 +1402,15 @@
 				2F1B0DC71ECD68BE0018E8E0 /* MySelfCell.swift in Sources */,
 				2FF224B41ECE834600972D9C /* NavigationController.swift in Sources */,
 				2FB817EC1ECAEE0F009851FC /* CarVideoController.swift in Sources */,
+				2F0EF9241EF116B100903FCF /* StudentsCountModel.swift in Sources */,
+				2FF16B4F1ED95DE100A94EA6 /* SSKeychain.m in Sources */,
 				2F1B0DBD1ECD53880018E8E0 /* Home_Down_View.swift in Sources */,
+				2F41238B1EEFC17B004E1B36 /* CarDetailsModel.swift in Sources */,
 				2F1B0DD41ECD9D570018E8E0 /* RecruitPlaceController.swift in Sources */,
 				2FB817FF1ECB03BB009851FC /* BundleExtension.swift in Sources */,
 				2F1B0DAA1ECD52E90018E8E0 /* MySelfViewController.swift in Sources */,
 				2FF224AE1ECE7A8C00972D9C /* MySelfStudentsController.swift in Sources */,
+				2F0EF91A1EF1098200903FCF /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1122,6 +1509,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1166,6 +1554,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1179,16 +1568,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H2JQF5KMYR;
+				CODE_SIGN_ENTITLEMENTS = SwiftSchool/SwiftSchool.entitlements;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDD7BKQBDJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftSchool/Class/Main/ThreeLib",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SwiftSchool/Class/Main/ThreeLib/include\"";
 				INFOPLIST_FILE = SwiftSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SwiftSchool/Class/Main/ThreeLib/include\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yang.SwiftSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSchool-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1202,16 +1599,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = H2JQF5KMYR;
+				CODE_SIGN_ENTITLEMENTS = SwiftSchool/SwiftSchool.entitlements;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WDD7BKQBDJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftSchool/Class/Main/ThreeLib",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/SwiftSchool/Class/Main/ThreeLib/include\"";
 				INFOPLIST_FILE = SwiftSchool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SwiftSchool/Class/Main/ThreeLib/include\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = yang.SwiftSchool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSchool-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";

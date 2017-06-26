@@ -15,6 +15,21 @@ class CarDetailsRow_1_View: UIView {
     var coachNameLabel = UILabel()
     var lineLabel = UILabel()
     
+    var carDetailsModel = CarDetailsModel(){
+        didSet{
+            if carDetailsModel.traincoachname.isEmpty {
+                coachNameLabel.text = "教练：暂无"
+            }else{
+                coachNameLabel.text = String(format: "教练:%@", carDetailsModel.traincoachname)
+            }
+            if carDetailsModel.trainstudentname.isEmpty {
+                studentNameLabel.text = "学员：暂无"
+            }else{
+                studentNameLabel.text = String(format: "学员:", carDetailsModel.trainstudentname)
+            }
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -27,7 +42,6 @@ class CarDetailsRow_1_View: UIView {
         
         coachNameLabel = UILabel.init(frame: CGRect.init(x: coachHeadImageView.frame.maxX + 5, y: 10, width: viewW / 2 - 35 - viewW / 32, height: 30))
         coachNameLabel.font = UIFont.systemFont(ofSize: 14)
-        coachNameLabel.text = "教练:萧炎"
         self.addSubview(coachNameLabel)
         
         lineLabel = UILabel.init(frame: CGRect.init(x: viewW / 2 - 1, y: 0, width: 1, height: viewH))
@@ -40,7 +54,6 @@ class CarDetailsRow_1_View: UIView {
         
         studentNameLabel = UILabel.init(frame: CGRect.init(x: studentHeadImageView.frame.maxX + 5, y: 10, width: viewW / 2 - 35 - viewW / 32, height: 30))
         studentNameLabel.font = UIFont.systemFont(ofSize: 14)
-        studentNameLabel.text = "学员:牧尘"
         self.addSubview(studentNameLabel)
     }
     

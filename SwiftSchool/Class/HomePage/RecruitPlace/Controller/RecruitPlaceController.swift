@@ -8,11 +8,13 @@
 
 import UIKit
 
-typealias chooseRecuritPlaceBlack = (_ placeName:String) -> Void
+typealias chooseRecuritPlaceBlack = (_ placeName:RecruitPlaceModel) -> Void
 
 class RecruitPlaceController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
     var recruitTabelView = UITableView()
     var placeArray = NSMutableArray()
+    public var brschListModel : BrschList = BrschList()
+    
     //闭包回调选择的地点
     var recuritPlaceName : chooseRecuritPlaceBlack?
     
@@ -20,14 +22,37 @@ class RecruitPlaceController: BaseViewController,UITableViewDelegate,UITableView
         super.viewDidLoad()
         self.title = "招生点"
         placeArray = NSMutableArray.init()
-        let branchArray:NSArray = ["中国","美国","英国","法国","德国"]
-        for i in 0 ..< 50 {
-            let inde:Int = Int(arc4random()%5)
-            placeArray.add(NSString(format: "%@__%ld", branchArray[inde] as! CVarArg,i))
-        }
         creatBranchListTableView()
+         getRecruitPlaceList()
     }
-    func creatBranchListTableView(){
+    func getRecruitPlaceList() {
+        var parmDic : NSDictionary?
+        if (brschListModel.path as NSString).length != 0 {
+            parmDic = ["path": brschListModel.path] as NSDictionary
+        }else{
+            parmDic = ["path": NSNull()] as NSDictionary
+        }
+        
+        RecruitPlaceModel().getRecruitListParm(parm: parmDic!, succee: { (succee) in
+            
+            placeArray = succee as! NSMutableArray
+            recruitTabelView.reloadData()
+            
+        }, fail: { (fail) in
+            print(fail)
+        })
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
+extension RecruitPlaceController {
+     fileprivate func creatBranchListTableView(){
         recruitTabelView = UITableView.init()
         recruitTabelView.frame = CGRect.init(x: 0, y: 0, width: WindowWidth, height: WindowHeight)
         recruitTabelView.delegate = self
@@ -48,20 +73,15 @@ class RecruitPlaceController: BaseViewController,UITableViewDelegate,UITableView
             cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: branchListCellID)
         }
         cell.selectionStyle = UITableViewCellSelectionStyle.none
+        let model = placeArray[indexPath.row] as! RecruitPlaceModel
         cell.textLabel?.font = UIFont.systemFont(ofSize: 12)
-        cell.textLabel?.text = placeArray[indexPath.row] as? String
+        cell.textLabel?.text = model.shortname
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        recuritPlaceName!(placeArray[indexPath.row] as! String)
+        let model = placeArray[indexPath.row] as! RecruitPlaceModel
+        recuritPlaceName!(model)
         self.navigationController?.popViewController(animated: true)
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = false
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 }

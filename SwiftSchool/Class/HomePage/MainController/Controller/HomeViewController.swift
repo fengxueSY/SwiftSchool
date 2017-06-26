@@ -14,24 +14,29 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
     var upView = Home_Up_View()
     var midView = Home_Mid_View()
     var downView = Home_Down_View()
-    
+    var modelBrschList : BrschList = BrschList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "主页"
         creatBaseUI()
-        
+        modelBrschList = BrschList.init()
         branchListArray = NSMutableArray.init()
-        let branchArray:NSArray = ["广州","上海","北京","重庆","郑州"]
-        for i in 0 ..< 50 {
-            let inde:Int = Int(arc4random()%5)
-            branchListArray.add(NSString(format: "%@__%ld", branchArray[inde] as! CVarArg,i))
+        for i in 0 ..< UserInformationSing.userInfo.branchList.count {
+            let model : BrschList = UserInformationSing.userInfo.branchList[i] as! BrschList
+            if i == 0 {
+                modelBrschList = model;
+            }
+            branchListArray.add(NSString(format: "%@", model.shortname))
         }
+        
+        print("xiansghi\(modelBrschList.path)")
         creatBranchListTableView()
     }
     func creatBaseUI(){
         upView = Home_Up_View.init(frame: CGRect.init(x: 0, y: 0, width: WindowWidth, height: 200))
-        
+        let homeUpDataDic : NSMutableDictionary = HomepageModel().getHomePageThreeData()
+        upView.setButtonNumber(parm: homeUpDataDic)
         midView = Home_Mid_View.init(frame: CGRect.init(x: 0, y: 200, width: WindowWidth, height: (WindowHeight - 200) / 3))
         midView.branchButton.addTarget(self, action: #selector(branchButtonAction), for: UIControlEvents.touchUpInside)
         midView.recruitButton.addTarget(self, action: #selector(recruitAction), for: UIControlEvents.touchUpInside)
@@ -93,14 +98,16 @@ class HomeViewController: BaseViewController,UITableViewDelegate,UITableViewData
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         midView.branchLabel.text = branchListArray[indexPath.row] as? String
+        modelBrschList = UserInformationSing.userInfo.branchList[indexPath.row] as! BrschList
         branchButtonAction()
     }
     //MARK:- 选择招生点
     func recruitAction(){
         let recruit = RecruitPlaceController()
+        recruit.brschListModel = modelBrschList
         recruit.recuritPlaceName = {
-            (placeName:String) -> Void in
-            self.midView.recruitLabel.text = placeName 
+            (placeName:RecruitPlaceModel) -> Void in
+            self.midView.recruitLabel.text = placeName.shortname
         }
         self.navigationController?.pushViewController(recruit, animated: true)
     }

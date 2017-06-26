@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListUpView" customModule="SwiftSchool" customModuleProvider="target">
+            <connections>
+                <outlet property="upSiftButton" destination="2Xp-xi-Nik" id="1r7-xN-zfD"/>
+                <outlet property="upSiftSearchBar" destination="IQI-4F-QhF" id="yfh-TZ-YGx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Xp-xi-Nik">
+                    <rect key="frame" x="330" y="0.0" width="45" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="4PA-2H-zf3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="筛选"/>
+                </button>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="IQI-4F-QhF">
+                    <rect key="frame" x="0.0" y="0.0" width="330" height="50"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Xp-xi-Nik" secondAttribute="bottom" id="4Ph-dg-OOy"/>
+                <constraint firstItem="IQI-4F-QhF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DIr-1i-hAF"/>
+                <constraint firstItem="2Xp-xi-Nik" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tce-Xf-Cmn"/>
+                <constraint firstItem="IQI-4F-QhF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="auP-Lc-pH5"/>
+                <constraint firstItem="2Xp-xi-Nik" firstAttribute="leading" secondItem="IQI-4F-QhF" secondAttribute="trailing" id="eJA-04-2cg"/>
+                <constraint firstAttribute="bottom" secondItem="IQI-4F-QhF" secondAttribute="bottom" id="jXh-GB-oeu"/>
+                <constraint firstAttribute="trailing" secondItem="2Xp-xi-Nik" secondAttribute="trailing" id="sTe-jb-j1w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-126.5" y="-203"/>
+        </view>
+    </objects>
+</document>

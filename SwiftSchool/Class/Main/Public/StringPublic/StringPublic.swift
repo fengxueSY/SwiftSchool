@@ -25,4 +25,26 @@ class StringPublic: NSObject {
         let strHeight = strText.boundingRect(with: size, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: fontDic as? [String : Any], context: nil).size.height
         return strHeight
     }
+    //TODO:- 返回请求体的格式
+    public func getHttpBodys(parm:NSDictionary) -> String {
+        var reStr = String()
+        let reData : NSData = try! JSONSerialization.data(withJSONObject: parm, options: JSONSerialization.WritingOptions(rawValue: 0)) as NSData
+        reStr = NSString.init(data: reData as Data, encoding: String.Encoding.utf8.rawValue)! as String
+        return reStr
+    }
+    //TODO:- MD5 加密字符串
+    public func MD5(str:String) ->String{
+        let cStr = str.cString(using: String.Encoding.utf8)
+        let digestLen = Int(CC_MD5_DIGEST_LENGTH)
+        let result = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: digestLen)
+        CC_MD5(str, CC_LONG(strlen(cStr)), result)
+        let retStr = NSMutableString()
+        for i in 0..<digestLen {
+            retStr.appendFormat("%02x", result[i])
+        }
+        
+        result.deallocate(capacity: digestLen)
+
+        return retStr as String
+    }
 }

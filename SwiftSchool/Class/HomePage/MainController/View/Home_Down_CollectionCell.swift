@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
 class Home_Down_CollectionCell: UICollectionViewCell {
     var upNumberLabel = UILabel()
     var midLabel = UILabel()
     var lineLabel = UILabel()
     var downDateLabel = UILabel()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)

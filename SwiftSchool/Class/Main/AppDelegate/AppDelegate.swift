@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let login = LoginController()
         
         
-        let tab = TabBarController()
+//        let tab = TabBarController()
         self.window?.rootViewController = login
         return true
     }
